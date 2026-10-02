@@ -1,0 +1,1 @@
+pactl load-module module-null-sink media.class=Audio/Sink sink_name=stdinman-demo channel_map=left,right && parec -d stdinman-demo.monitor --format=float32le --rate=48000 | stdinman & mpv -fs --audio-device=pulse/stdinman-demo .
